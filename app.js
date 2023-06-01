@@ -32,38 +32,74 @@ console.log(ageCtegorize(40));
  * @returns Rectangle Area
  */
 const rectangleArea = function (length, width) {
-      return `Rectangle Area =` + (length * width) ;
+      return `Rectangle Area = ${(length * width)} `;
     }
 
 console.log(rectangleArea(40,30))
 
 
+// squareArea = side * side;
+/**
+ * 
+ * @param {*} side 
+ * @returns Square Area
+ */
+const squareArea = function(side){
+      return `Square Area is =  ${(side * side)}`
+}
 
+console.log(squareArea(20))
+
+// TriangleArea = (base * height) /2;
+
+const triangleArea = (base,height) => `Triangle Area is = ${(base * height) /2}`;
+
+console.log(triangleArea(10,16));
+
+// 4.Create an age calculator function
+
+let currentYear = 2023;
+const ageCheck = (barthYear) => `Your current age is = ${currentYear - barthYear}`;
+
+console.log(ageCheck(1987));
+
+
+// 5.Create a BMI function for health
 // Bmi calculator
+// BMI = weight (kg) / (height (cm) * height (cm)).
 /**
  * 
  * @param {*} weight 
  * @param {*} height 
  * @returns bmi
  */
-// const bmiCal = (weight, height) => {
-//       // get bmi value
-//       const bmi = weight / (height * height)
-//       if (bmi < 18.5){
-//             return 'you are under weight';
-//       }else if(bmi >= 25 && bmi < 30){
-//             return 'you height is normal'
-//       }else if (bmi >= 25 && bmi <30){
-//             return 'over weight'
-//       }
-// }
-// console.log(bmiCal(weight, height))
+const bmiCal = (weight, height) => {
+      // get bmi value
+      const bmi = weight / (height * height)
+            // console.log(bmi)
+      if (bmi <= 18.5){
+            return 'you are under weight';
+      }else if(bmi > 18.5 && bmi < 25){
+            return 'you weight is normal'
+      }else if (bmi >= 25 && bmi <30){
+            return 'over weight'
+      }else{
+           return `Obesity big problem ojon komaw`
+      }
+}
+console.log(bmiCal(93, 1.6764));
 
+// 6.Create a currency converter function from taka to USD, CAD, POUND, EURO 
+const usdUsa = 0.0093;
+const cadRat = 0.013;
+const poundRat = 0.0075;
+const euroRat = 0.0087;
 
-// arry mathod arr.push("any valu and you can use multipul valu") = shasher dike add kora,
-// pop(not use valu) ate deya array ar shesher dikthake akti valu catejabe akadik valu kata jay na .add
-// unshift("any valu multipul valu can add") ati deya array ar prothom a valu add kora jay
-// arr.shift() prothom theke we can remve any valu
-// array slice(start index, end inxex)  akti array theke keta onno akti array toyri kora onkind copy kora
-// array splice() holo cut kore arakti array toyri kora
-// arr,concat() akti array arry ar shathe onno ar akti array jukto korar jonno ai methord bebohar korahoy
+switch (key) {
+      case value:
+            
+            break;
+
+      default:
+            break;
+}
